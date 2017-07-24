@@ -1,0 +1,45 @@
+﻿<nav class="navbar navbar-inverse" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>    
+  </div>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+        <li><a href="#">Left</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-center">
+        <li><a href="#">Center</a></li>
+        <li><a href="#">Center</a></li>
+      <li><a href="#">Center</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li> 
+        
+        <a [routerLink]="['/login']" class="btn btn-info btn-md">
+          <span class="glyphicon glyphicon-log-out"></span> Log out
+        </a>
+        </li>
+    </ul>
+  </div>
+</nav>
+<div class="jumbotron">
+    <div class="container">
+        <div class="col-sm-8 col-sm-offset-2">
+            <alert></alert>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+
+<!-- credits -->
+<div class="text-center">
+    <p>
+        <a href="http://jasonwatmore.com/post/2016/09/29/angular-2-user-registration-and-login-example-tutorial" target="_top">Angular 2 User Registration and Login Example & Tutorial</a>
+    </p>
+    <p>
+        <a href="http://jasonwatmore.com" target="_top">JasonWatmore.com</a>
+    </p>
+</div>
